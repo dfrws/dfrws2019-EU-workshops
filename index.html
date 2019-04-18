@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.23/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.23/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.23/js/uikit-icons.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+      
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+
+
+    </style>
+  </head>
+  <body class="uk-background-muted">
+    <div class="wrapper">
+      <div class="content">
+        <div style="height:1000px;">
+          
+  
+  <div class="uk-offcanvas-content">
+    <div id="offcanvas-usage" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-01-Reverse-Engineering-Malware/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ Malware Reverse Engineering 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-01-Reverse-Engineering-Malware/talk-1/talk-1.pdf">
+  <i class="fas fa-object-group " style="color:#009688"> </i>
+Prepartaion before the workshop 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-01-Reverse-Engineering-Malware/paneltalk/abstract.pdf">
+  <i class=" " style="color:"> </i>
+Abstract 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-02-CASE-Workshop/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ CASE Workshop with Demonstration 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-02-CASE-Workshop/paneltalk/panel-talk-1.pdf">
+  <i class=" " style="color:"> </i>
+Abstract 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-03-Forensic-Intelligence-Workshop/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ Forensic Intelligence Workshop 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-04-Women-The-future-of-forensic-computing/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ Women: The future of forensic computing?! 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-04-Women-The-future-of-forensic-computing/paneltalk/panel-talk-1.pdf">
+  <i class=" " style="color:"> </i>
+Abstract 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                    
+                      <li>
+                        
+                          
+                            <a class="item"
+                               href="https://www.cs1.tf.fau.de/women-the-future-of-forensic-computing/">
+  <i class="fas fa-bookmark " style="color:"> </i>
+Official Site 
+                            </a>
+                          
+                        
+                      </li>
+                    
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-05-Probabilistic-Reasoning/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ Probabilistic Reasoning Workshop 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-05-Probabilistic-Reasoning/paneltalk/panel-talk-1.pdf">
+  <i class=" " style="color:"> </i>
+Abstract 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-06-Oxygen-WhatsApp-Workshop/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ WhatsApp Forensics: Advanced Methods of Extraction and Decryption 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-06-Oxygen-WhatsApp-Workshop/paneltalk/panel-talk-1.pdf">
+  <i class=" " style="color:"> </i>
+Abstract 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+          
+            <ul class="uk-nav">
+              <li class="uk-parent">
+                <a class="item" href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-07-Modern-Acquisition-Workshop/index.html">
+                  
+  <i class="fas fa-sitemap " style="color:#009688"> </i>
+ Forensic Acquisition of Modern Evidence 
+                </a>
+                <ul class="uk-nav-sub">
+                  
+                    
+                      <li>
+                        
+                          
+                            
+                              <a class="item"
+                                 href="https://jsheppard-dfrws.github.io/DFRWS-Workshops/index.html//topic-07-Modern-Acquisition-Workshop/paneltalk/panel-talk-1.pdf">
+  <i class=" " style="color:"> </i>
+Abstract 
+                                
+                              </a>
+                            
+                          
+                        
+                      </li>
+                    
+                  
+                </ul>
+              </li>
+            </ul>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="uk-flex uk-flex-center uk-flex-middle uk-text-center uk-padding-small" uk-grid>
+    
+  <div class="uk-padding">
+    <a href="#offcanvas-usage" uk-toggle title="Table of Contents" pos="bottom" uk-tooltip>
+      
+  <i class="fas fa-bars fa-3x" style="color:"> </i>
+
+    </a>
+  </div>
+
+    
+  <div class="uk-width-1-2@m  uk-card uk-card-default uk-padding-small">
+    <div uk-grid>
+      <div class="uk-width-1-5@m">
+        
+          
+  
+    <i class=" fa-4x" style="color:"></i>
+  
+
+        
+      </div>
+      <div class="uk-width-expand@m uk-text-left">
+        <h2>  DFRWS Workshops 2019  </h2>
+        <div class="uk-text-muted uk-text-small">
+          
+            DFRWS-EU, Oslo, Norway April 24th 2019
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-padding">
+    
+  </div>
+
+    
+  
+    
+  
+
+    
+      
+
+  
+    <div class="uk-card uk-card-default uk-padding-small">
+      <ul class="uk-iconnav">
+        
+          
+  
+    
+      
+      
+  <li>
+    <a href="./talkwall.html" title="All slides's in module" pos="bottom" uk-tooltip> 
+  <i class="fas fa-object-group fa-2x" style="color:#009688"> </i>
+ </a>
+  </li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+        
+        
+      </ul>
+    </div>
+  
+
+    
+    
+  
+
+  </div>
+
+
+  <div class="uk-container uk-padding-small">
+    
+  
+
+    
+  
+
+    
+  
+
+  </div>
+  
+  <div class="uk-container uk-padding-small">
+    <div class="uk-child-width-1-4@s uk-flex uk-flex-center" uk-grid uk-height-match="target: > div > .uk-card">
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-01-Reverse-Engineering-Malware/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  Malware Reverse Engineering </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-01-Reverse-Engineering-Malware/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Associate Professor Geir Olav Dyrkolbotn (NTNU) and Sergii Banin (NTNU)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-02-CASE-Workshop/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  CASE Workshop with Demonstration </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-02-CASE-Workshop/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Deborah L. Nichols (MITRE), Vik Harichandran (MITRE), Nikolaos Matskanis (CETIC) &amp; Mattia Epifani (RE@LITY NET - System Solutions)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-03-Forensic-Intelligence-Workshop/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  Forensic Intelligence Workshop </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-03-Forensic-Intelligence-Workshop/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Mark Scanlon, Ph.D. (University College Dublin), Dr. Katrin Franke &amp; Zeno Geradts (Netherlands Forensic Institute)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-04-Women-The-future-of-forensic-computing/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  Women: The future of forensic computing?! </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-04-Women-The-future-of-forensic-computing/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Felix Freiling (Friedrich-Alexander-University) &amp; Dr. Katrin Franke (NTNU)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-05-Probabilistic-Reasoning/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  Probabilistic Reasoning Workshop </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-05-Probabilistic-Reasoning/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Pavel Gladyshev, Ph.D. (University College Dublin) &amp; Babak Habibnia (University College Dublin)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-06-Oxygen-WhatsApp-Workshop/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  WhatsApp Forensics: Advanced Methods of Extraction and Decryption </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-06-Oxygen-WhatsApp-Workshop/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Tanya Pankova (Oxygen Forensics Sponsored Workshop)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+        <div>
+          
+            
+
+  
+  
+
+  <div class="uk-card uk-card-default 
+  
+    uk-card-hover
+  
+ uk-card-small uk-text-center uk-text-baseline uk-animation-fade">
+    
+  
+    
+      
+      
+    
+    <a href=./topic-07-Modern-Acquisition-Workshop/index.html>
+  
+
+    
+  <div class="uk-card-header">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        <h3>  Forensic Acquisition of Modern Evidence </h3>
+      </div>
+      <div class="uk-width-1-4@m">
+        
+  <i class="fas fa-sitemap fa-2x" style="color:#009688"> </i>
+
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="uk-card-body">
+    
+      <img src="./topic-07-Modern-Acquisition-Workshop/topic.jpg">
+    
+  </div>
+
+    
+  
+    </a>
+  
+
+    
+  
+
+    
+  
+    <div class="uk-card-footer">
+      <p> <p>Dr. Bradley Schatz (Evimetry)</p>
+</p>
+    </div>
+  
+
+    
+  
+
+  </div>
+
+
+
+          
+        </div>
+      
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+      <div class="footer uk-text-small uk-text-right uk-text-muted"> Powered by <a
+          href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a>
+        
+      </div>
+    </div>
+  </body>
+</html>
