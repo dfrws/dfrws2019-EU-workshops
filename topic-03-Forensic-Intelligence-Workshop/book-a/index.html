@@ -141,10 +141,22 @@ html, body {
         
           <div class="ui tab segment lab" data-tab="Instructions">
             <h1>Forensic Intelligence</h1>
-<p>This demonstrations uses the WideResnet Architecture for images of size 64 trained on the IMDB-WIKI dataset and requires a python 2.7 environment on a machine with a webcam.</p>
+<p>The quickest and easiest option for facial age estimation demonstration part of the workshop is to use the latest version of VirtualBox platform and the VirtualBox Extension Pack (both available from here: <a href="https://www.virtualbox.org/wiki/Downloads"><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></a>). Then you can download a pre-prepared virtual machine (dfrws.ova ~1.4Gb) from either of the below links:</p>
+<ol>
+<li><p>Google Drive: <a href="https://drive.google.com/open?id=1gJfO5GkGMrU9fW92WhAJkv8-kLbo4_xv"><a href="https://drive.google.com/open?id=1gJfO5GkGMrU9fW92WhAJkv8-kLbo4_xv">https://drive.google.com/open?id=1gJfO5GkGMrU9fW92WhAJkv8-kLbo4_xv</a></a></p>
+</li>
+<li><p>UCD server: <a href="http://scanlon.ucd.ie/dfrws.ova"><a href="http://scanlon.ucd.ie/dfrws.ova">http://scanlon.ucd.ie/dfrws.ova</a></a></p>
+</li>
+<li><p>dfrws.ova MD5 hash: aee02f23b2bed023b74b66885b9a787c</p>
+</li>
+<li><p>dfrws.ova SHA1 hash: 88d2c7fe5ec2d0639416f8c8b3d72687781fc61a</p>
+</li>
+</ol>
+<pre><code>OS username and password: lubuntu/lubuntu</code></pre>
+<p>Manual installation instructions for linux (requires python 2.7.x):</p>
 <pre><code class="lang-bash">0) sudo apt install git python-pip
 
-1) git clone
+1) git clone https://4nd4@bitbucket.org/4nd4/dfrws_demo.git
 
 2) cd dfrws_demo
 
@@ -152,8 +164,9 @@ html, body {
 
 4) pip install -r requirements.txt
 
-5) python demo.py</code></pre>
-<p>It takes around 15 minutes to download the weights file</p>
+5) python demo.py (you may be prompted to grant python access to your webcam; the demo needs this access)</code></pre>
+<p>Note: It can take up to 15 minutes to download the weights file when launching demo.py for the first time.</p>
+<p>This demo uses the WideResnet Architecture for images of size 64x64 trained on the IMDB-WIKI dataset. </p>
 <p>References: <a href="https://github.com/yu4u/age-gender-estimation"><a href="https://github.com/yu4u/age-gender-estimation">https://github.com/yu4u/age-gender-estimation</a></a></p>
 
           </div>
