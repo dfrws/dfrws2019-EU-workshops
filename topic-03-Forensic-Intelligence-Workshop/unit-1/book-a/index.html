@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+          type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+          rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
+
+body {
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+  font-size:90%;
+  color: black;
+}
+
+p {
+  margin: 0.5em;
+}
+
+pre code {
+  font-family: "Monaco";
+  font-size: 100%;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:10px;
+}
+
+h1, h2, h3 {
+  border-bottom:thin solid black;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-style:italic;
+  font-size:130%;
+}
+
+h2 {
+  font-size:110%;
+}
+
+h3 {
+  font-size:100%;
+}
+
+
+
+      
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background: white;
+  text-align: right;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+
+
+    </style>
+  </head>
+
+  
+  
+
+  <div class="ui fixed top pointing inverted stackable menu labmenu">
+    <header class="header item">
+      <i id="toc" class="sitemap icon"></i>
+      
+        <a href="../../index.html"> Preparing for the Workshop  </a>
+      
+    </header>
+    <div class="right tab-menu menu">
+      
+        <a class="item" data-tab="Preparation before the workshop Part 2">
+          Preparation before the workshop Part 2
+        </a>
+      
+        <a class="item" data-tab="Instructions">
+          Instructions
+        </a>
+      
+    </div>
+  </div>
+
+
+  
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <br><br>
+      
+        
+          
+            <a class="item"
+               href="https://github.com/dfrws/dfrws2019-EU-workshops.git//topic-03-Forensic-Intelligence-Workshop/unit-1/book-a/index.html">Preparation before the workshop Part 2 </a>
+          
+        
+      
+    </div>
+    <div class="pusher" tabindex="-1">
+      <div class="ui basic segment">
+        <br>
+        
+          <div class="ui tab segment lab" data-tab="Preparation before the workshop Part 2">
+            <h1>Forensic Intelligence Part 2</h1>
+<p>Pre-workshop preparations Part 2 (Facial Age Estimation)</p>
+
+          </div>
+        
+          <div class="ui tab segment lab" data-tab="Instructions">
+            <h1>Forensic Intelligence</h1>
+<p>The quickest and easiest option for facial age estimation demonstration part of the workshop is to use the latest version of VirtualBox platform and the VirtualBox Extension Pack (both available from here: <a href="https://www.virtualbox.org/wiki/Downloads"><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></a>). Then you can download a pre-prepared virtual machine (dfrws.ova ~1.4Gb) from either of the below links:</p>
+<ol>
+<li><p>Google Drive: <a href="https://drive.google.com/open?id=1gJfO5GkGMrU9fW92WhAJkv8-kLbo4_xv"><a href="https://drive.google.com/open?id=1gJfO5GkGMrU9fW92WhAJkv8-kLbo4_xv">https://drive.google.com/open?id=1gJfO5GkGMrU9fW92WhAJkv8-kLbo4_xv</a></a></p>
+</li>
+<li><p>UCD server: <a href="http://scanlon.ucd.ie/dfrws.ova"><a href="http://scanlon.ucd.ie/dfrws.ova">http://scanlon.ucd.ie/dfrws.ova</a></a></p>
+</li>
+</ol>
+<p>--dfrws.ova MD5 hash: aee02f23b2bed023b74b66885b9a787c</p>
+<p>--dfrws.ova SHA1 hash: 88d2c7fe5ec2d0639416f8c8b3d72687781fc61a</p>
+<pre><code>OS username and password: lubuntu/lubuntu</code></pre>
+<p>Manual installation instructions for linux (requires python 2.7.x):</p>
+<pre><code class="lang-bash">0) sudo apt install git python-pip
+
+1) git clone https://4nd4@bitbucket.org/4nd4/dfrws_demo.git
+
+2) cd dfrws_demo
+
+3) sudo apt-get install build-essential cmake libgtk-3-dev libboost-all-dev
+
+4) pip install -r requirements.txt
+
+5) python demo.py (you may be prompted to grant python access to your webcam; the demo needs this access)</code></pre>
+<p>Note: It can take up to 15 minutes to download the weights file when launching demo.py for the first time.</p>
+<p>This demo uses the WideResnet Architecture for images of size 64x64 trained on the IMDB-WIKI dataset. </p>
+<p>References: <a href="https://github.com/yu4u/age-gender-estimation"><a href="https://github.com/yu4u/age-gender-estimation">https://github.com/yu4u/age-gender-estimation</a></a></p>
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <script>
+    $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+    $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+  </script>
+
+
+
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right small menu">
+      <div class="ui tiny basic message segment">
+         Powered by <a href="https://github.com/edeleastar/tutors-ts">tutors-ts.</a> 
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+</html>
